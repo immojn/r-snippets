@@ -12,6 +12,6 @@ connection <- odbcConnectAccess("C:/path/to/database.mdb")
 
 # Define query string
 
-strQuery = "SELECT * FROM TABLE"
+strQuery = "SELECT * FROM table_name WHERE field = X"
 
 queryDataFrame <- sqlQuery(connection, strQuery)
